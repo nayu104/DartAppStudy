@@ -1,16 +1,12 @@
-# stu
+エンジニア向けに設計されたSNSアプリです。
+GitHubアカウントでログインし、コードの投稿・共有・リアクションなどが可能です。
+開発者が気軽に集まり、技術を共有し合える「エンジニアのための居場所」を目指しています。
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+特徴
+	•	GitHub OAuth ログイン対応（Flutter × Supabase or Node.js）
+	•	投稿機能（テキスト／コード／GitHub Gist）
+	•	タイムライン表示（新着順）
+	•	いいね機能
+	•	プロフィール表示（GitHubアイコン・ID）
+	•	フォロー・フォロワー機能（GitHub連携）
+	•	BottomNavigationによる画面遷移（Home / 検索 / グループ / 通知 / DM）
