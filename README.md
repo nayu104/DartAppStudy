@@ -1,37 +1,59 @@
+了解、以下は見出しに太字や表現の強調を加えて視認性を高めたREADMEテンプレートです（GitHub向けにMarkdown形式で最適化済み）：
+
+⸻
+
 EngineerSNS（仮称）
 
-エンジニア向けに設計されたSNSアプリです。
-GitHubアカウントでログインし、コードの投稿・共有・リアクションなどが可能です。
-開発者が気軽に集まり、技術を共有し合える「エンジニアのための居場所」を目指しています。
+開発者の、開発者による、開発者のためのSNS。
 
-特徴
-	•	GitHub OAuth ログイン対応（Flutter × Supabase or Node.js）
-	•	投稿機能（テキスト／コード／GitHub Gist）
+GitHubアカウントでログインし、コードを投稿・共有・評価できる
+エンジニア専用SNSアプリです。
+
+⸻
+
+▶ 主な機能
+	•	GitHub OAuth ログイン
+	•	コード投稿機能（テキスト / Gist対応）
 	•	タイムライン表示（新着順）
 	•	いいね機能
-	•	プロフィール表示（GitHubアイコン・ID）
-	•	フォロー・フォロワー機能（GitHub連携）
-	•	BottomNavigationによる画面遷移（Home / 検索 / グループ / 通知 / DM）
+	•	プロフィール表示（GitHubの名前・アイコン・ID）
+	•	フォロー・フォロワー表示（GitHub連携）
+	•	BottomNavigation による5画面構成
+	•	Home / 検索 / グループ / 通知 / DM
 
-技術スタック
+⸻
+
+▶ 使用技術（Tech Stack）
 
 項目	内容
-フロントエンド	Flutter（Dart）
-バックエンド	Node.js
+Frontend	Flutter（Dart）
+Backend	Node.js（Express） or Supabase Functions
 認証	GitHub OAuth
-データベース	PostgreSQL（Neon）
+データベース	PostgreSQL（Neon / Supabase）
 デプロイ	Google Cloud Run
 
-開発背景
 
-Flutter × Node.js × GitHub APIを組み合わせることで、
-開発者同士がコードベースで繋がるSNSの実現を目指しました。
-技術的な発見やTipsを気軽にシェアし合える環境を提供します。
+⸻
 
-ログイン画面	タイムライン	投稿画面
-		
+▶ アプリの構成イメージ
 
-今後の開発予定
-	•	DM機能
-	•	投稿へのコメント機能
-	•	タグによる検索機能
+[Flutter UI] ⇄ [OAuth認証] ⇄ [DB/API（Node.js or Supabase）]
+                            ⇅
+                    [GitHub API連携]
+
+
+⸻
+
+▶ 開発の背景
+
+「エンジニアがもっと気軽にアウトプットできる場所を作りたい」
+そんな思いから本アプリはスタートしました。
+
+X（旧Twitter）では書けない技術的な内容を、仲間内で共有できる世界を目指しています。
+
+⸻
+
+▶ 今後の開発予定（WIP）
+	•	リアルタイムDM機能
+	•	投稿へのコメント
+	•	タグ・検索機能
