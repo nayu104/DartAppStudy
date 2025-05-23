@@ -1,6 +1,4 @@
-了解、以下は見出しに太字や表現の強調を加えて視認性を高めたREADMEテンプレートです（GitHub向けにMarkdown形式で最適化済み）：
 
-⸻
 
 EngineerSNS（仮称）
 
